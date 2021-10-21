@@ -15,13 +15,11 @@ public class Benutzer {
         return zeit;
     }
 
-    public double kalkuliereZeite(Sport sport_x){
-        double zeit = 0;
-
-        }
+    public double kalkuliereZeite(Sport sport){
+        return sport.kalkuliereZeit();
     }
 
     public double kalkuliereDurschnittszeit(){
-        return;
+        return kalkuliereZeite() / sport.size();
     }
 }
