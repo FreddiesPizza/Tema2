@@ -37,6 +37,10 @@ public class Benutzer {
         this.sport = sport;
     }
 
+    /**
+     *
+     * @return das gesammte Zeit fur alle Sports die der Benutzer treibt
+     */
     public double kalkuliereZeite(){
         double zeit = 0;
         for(Sport i : sport){
@@ -45,10 +49,19 @@ public class Benutzer {
         return zeit;
     }
 
+    /**
+     *
+     * @param sport der Benutzer gibt ein Sport an fur den er das Zeitdauer wissen will
+     * @return
+     */
     public double kalkuliereZeite(Sport sport){
         return sport.kalkuliereZeit();
     }
 
+    /**
+     *
+     * @return arithmetisches mittel fur alle Sorts die der Benutzer treibt
+     */
     public double kalkuliereDurschnittszeit(){
         return kalkuliereZeite() / sport.size();
     }
