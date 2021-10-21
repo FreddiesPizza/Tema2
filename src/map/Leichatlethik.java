@@ -1,8 +1,7 @@
 package map;
 
-public class Leichatlethik implements Sport{
-    @Override
-    public double kalkuliereZeit(){
-        return 0;
-    }
+abstract class Leichatlethik implements Sport{
+
+    public abstract double kalkuliereZeit();
+
 }

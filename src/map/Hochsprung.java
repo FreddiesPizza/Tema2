@@ -1,10 +1,9 @@
 package map;
 
-public class Basketball extends Mannschaftssport{
+public class Hochsprung extends Leichatlethik{
 
     @Override
     public double kalkuliereZeit(){
-        return 55;
+        return 20;
     }
-
 }

@@ -1,16 +1,24 @@
 package map;
 
+import java.util.List;
+
 public class Benutzer {
     private String vorName;
     private String nachName;
-    private Sport[] sport;
+    private List<Sport> sport;
 
     public double kalkuliereZeite(){
-        return;
+        double zeit = 0;
+        for(Sport i : sport){
+            zeit += i.kalkuliereZeit();
+        }
+        return zeit;
     }
 
-    public double kalkuliereZeite(Sport sport){
-        return;
+    public double kalkuliereZeite(Sport sport_x){
+        double zeit = 0;
+
+        }
     }
 
     public double kalkuliereDurschnittszeit(){
