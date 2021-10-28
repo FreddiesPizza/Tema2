@@ -7,6 +7,8 @@ public class Benutzer {
     private String nachName;
     private List<Sport> sport;
 
+    public Benutzer(){}
+
     public void setVorName(String vorName) {
         this.vorName = vorName;
     }
@@ -65,4 +67,5 @@ public class Benutzer {
     public double kalkuliereDurschnittszeit(){
         return kalkuliereZeite() / sport.size();
     }
+
 }
