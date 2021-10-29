@@ -54,7 +54,7 @@ public class Benutzer {
     /**
      *
      * @param sport der Benutzer gibt ein Sport an fur den er das Zeitdauer wissen will
-     * @return
+     * @return das Zeitdauer fur das gegebene Sport
      */
     public double kalkuliereZeite(Sport sport){
         return sport.kalkuliereZeit();

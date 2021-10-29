@@ -25,21 +25,21 @@ class BenutzerTest {
     @org.junit.jupiter.api.Test
     void kalkuliereZeite() {
         //System.out.println("yes");
-        assert(benutzer.kalkuliereZeite(new Fussball()) == 65);
-        assert(benutzer.kalkuliereZeite(new Basketball()) == 55);
-        assert(benutzer.kalkuliereZeite(new Hindernislauf()) == 30);
+        assertEquals(benutzer.kalkuliereZeite(new Fussball()), 65);
+        assertEquals(benutzer.kalkuliereZeite(new Basketball()),55);
+        assertEquals(benutzer.kalkuliereZeite(new Hindernislauf()),30);
         assertEquals(benutzer.kalkuliereZeite(new Hochsprung()), 20);
         //System.out.println("no");
     }
 
     @org.junit.jupiter.api.Test
     void testKalkuliereZeite() {
-        assert(benutzer.kalkuliereZeite() == 150);
+        assertEquals(benutzer.kalkuliereZeite(), 150);
     }
 
     @org.junit.jupiter.api.Test
     void kalkuliereDurschnittszeit() {
-        assert(benutzer.kalkuliereDurschnittszeit() == 51);
-        //assertEquals(benutzer.kalkuliereDurschnittszeit(), 51);
+        //assert(benutzer.kalkuliereDurschnittszeit() == 51);
+        assertEquals(benutzer.kalkuliereDurschnittszeit(), 50);
     }
 }

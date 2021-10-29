@@ -15,12 +15,12 @@ public class Main {
         Benutzer user1 = new Benutzer("Andrei","Balu",list);
 
         Testing();
-
+/*
         Sport jump = new Hochsprung();
         System.out.println(user1.kalkuliereZeite());
         System.out.println(user1.kalkuliereZeite(jump));
         System.out.println(user1.kalkuliereZeite(fotbal));
-        System.out.println(user1.kalkuliereDurschnittszeit());
+        System.out.println(user1.kalkuliereDurschnittszeit());*/
 
     }
 
